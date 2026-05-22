@@ -12,7 +12,7 @@ const Footer = () => {
 
                 </div>
                 <div>
-                    <h2 className='text-bold martel-sans-regular text-xl font-medium mb-6 text-gray-700'>COMPANY</h2>
+                    <h2 className='text-bold prata-regular text-xl font-medium mb-6 text-gray-700'>COMPANY</h2>
                     <ul className='flex flex-col gap-2 text-gray-600'>
                         <Link to='/'><li>Home</li></Link>
                         <Link to='/about'><li>About us</li></Link>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2 className='text-bold martel-sans-regular text-xl font-medium mb-6 text-gray-700'>GET IN TOUCH</h2>
+                    <h2 className='text-bold prata-regular text-xl font-medium mb-6 text-gray-700'>GET IN TOUCH</h2>
                     <ul className='flex flex-col gap-2 text-gray-600'>
                         <li>+91-7759957177</li>
                         <li>[EMAIL_ADDRESS]</li>

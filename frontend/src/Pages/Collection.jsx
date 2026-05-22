@@ -81,15 +81,15 @@ const Collection = () => {
                     <div className='flex flex-col gap-2 text-gray-700 font-light'>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Men' onChange={togglecategory} />
-                            <p className='martel-sans-regular'>Men</p>
+                            <p className='prata-regular'>Men</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Women' onChange={togglecategory} />
-                            <p className='martel-sans-regular'>Women</p>
+                            <p className='prata-regular'>Women</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Kids' onChange={togglecategory} />
-                            <p className='martel-sans-regular'>Kids</p>
+                            <p className='prata-regular'>Kids</p>
                         </div>
                     </div>
                 </div>
@@ -98,15 +98,15 @@ const Collection = () => {
                     <div className='flex flex-col gap-2 text-gray-700 font-light'>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Topwear' onChange={toggleSubCategory} />
-                            <p className='martel-sans-regular'>Topwear</p>
+                            <p className='prata-regular'>Topwear</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Bottomwear' onChange={toggleSubCategory} />
-                            <p className='martel-sans-regular'>Bottomwear</p>
+                            <p className='prata-regular'>Bottomwear</p>
                         </div>
                         <div className='flex items-center gap-3'>
                             <input className='w-4 h-4' type="checkbox" value='Winterwear' onChange={toggleSubCategory} />
-                            <p className='martel-sans-regular'>Winterwear</p>
+                            <p className='prata-regular'>Winterwear</p>
                         </div>
                     </div>
                 </div>
@@ -114,10 +114,9 @@ const Collection = () => {
 
             {/* Right Side */}
             <div className='flex-1'>
-                <div className='flex justify-between text-base sm:text-2xl mb-4'>
+                <div className='flex flex-wrap justify-between items-center text-base sm:text-2xl mb-4 gap-2'>
                     <Title text1='ALL ' text2='COLLECTIONS' />
-                    {/*Products Sort*/}
-                    <select onChange={(e) => setSortType(e.target.value)} className='border border-gray-300 text-sm px-2 py-1 sm:py-2'>
+                    <select onChange={(e) => setSortType(e.target.value)} className='border border-gray-300 text-xs sm:text-sm px-2 py-1 sm:py-2 max-w-[150px] sm:max-w-none'>
                         <option value="relevant">Sort by : Relevant</option>
                         <option value="low-high">Sort by : Low-High</option>
                         <option value="high-low">Sort by : High-Low</option>
