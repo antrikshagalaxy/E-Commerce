@@ -6,6 +6,8 @@ import connectDB from "./config/mongodb.js";
 import connectCloudinary from "./config/cloudinary.js";
 import UserRoute from "./routes/UserRoute.js";
 import ProductRoute from "./routes/ProductRoute.js";
+import CartRoute from "./routes/CartRoute.js";
+import OrderRoute from "./routes/OrderRoute.js";
 
 //App config
 const app = express();
@@ -19,6 +21,8 @@ app.use(express.json());
 
 app.use("/api/user", UserRoute);
 app.use("/api/product", ProductRoute)
+app.use("/api/cart", CartRoute);
+app.use("/api/order", OrderRoute);
 
 //API routes
 app.get("/", (req, res) => {

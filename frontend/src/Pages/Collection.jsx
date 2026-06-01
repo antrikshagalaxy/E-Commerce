@@ -54,7 +54,7 @@ const Collection = () => {
         }
 
         if (SubCategory.length > 0) {
-            productsCopy = productsCopy.filter(item => SubCategory.includes(item.subCategory));
+            productsCopy = productsCopy.filter(item => SubCategory.includes(item.subCategory || item.subcategory));
         }
 
         setfilterproducts(sortProduct(productsCopy));
@@ -66,7 +66,7 @@ const Collection = () => {
 
     useEffect(() => {
         applyFilter();
-    }, [Category, SubCategory, sortType, search, showsearch]);
+    }, [Category, SubCategory, sortType, search, showsearch, products]);
 
     return (
         <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>

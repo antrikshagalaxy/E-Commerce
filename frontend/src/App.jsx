@@ -9,6 +9,7 @@ import Orders from './Pages/Orders'
 import About from './Pages/About'
 import Contacts from './Pages/Contacts'
 import Collection from './Pages/Collection'
+import Verify from './Pages/Verify'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Searchbar from './Components/Searchbar'
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/placeorder' element={<PlaceOrder />}></Route>
         <Route path='/orders' element={<Orders />}></Route>
+        <Route path='/verify' element={<Verify />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/contacts' element={<Contacts />}></Route>
         <Route path='/collection' element={<Collection />}></Route>

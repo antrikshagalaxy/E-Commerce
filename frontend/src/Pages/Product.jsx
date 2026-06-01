@@ -84,7 +84,7 @@ const Product = () => {
             </div>
             {/* Display Related Products */}
             <div className='mt-20'>
-                <RelatedProducts category={productdata.category} subCategory={productdata.subCategory} />
+                <RelatedProducts category={productdata.category} subCategory={productdata.subCategory || productdata.subcategory} />
             </div>
         </div>
     ) : <div className='opacity-0'></div>
